@@ -1,0 +1,58 @@
+.wpb-iw-area img {
+	border-radius: 0;
+	box-shadow: inherit;
+}
+.wpb-iw-area.wpb-iw-align-left {
+	text-align: left;
+}
+.wpb-iw-area.wpb-iw-align-right {
+	text-align: right;
+}
+.wpb-iw-area.wpb-iw-align-center {
+	text-align: center;
+}
+.wpb-iw-area figcaption {
+	padding: 15px;
+}
+
+/* Hover Theme */
+
+.wpb-iw-area.wpb-iw-hover * {
+    -webkit-backface-visibility: hidden;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.wpb-iw-area.wpb-iw-hover figure {
+	overflow: hidden;
+	position: relative;
+	margin: 0;
+}
+.wpb-iw-area.wpb-iw-hover figcaption  {
+	position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    color: #ffffff;
+    width: 100%;
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+    -webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
+    -moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
+    transition: transform 0.4s, opacity 0.1s 0.3s;
+}
+.wpb-iw-area.wpb-iw-hover figure:hover figcaption {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
+    -moz-transition: -moz-transform 0.4s, opacity 0.1s;
+    transition: transform 0.4s, opacity 0.1s;
+}
